@@ -7,6 +7,7 @@ public class PassCost {
    
 	public static void main(String[] args) {
 		int noOfPassengers = 10;
+		
 		boolean nonStop = false;
 		boolean eveningPass = false;
 		float passCost;
