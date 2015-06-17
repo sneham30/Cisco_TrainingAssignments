@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 
 public class StringQueue {
 	public static final int CAPACITY = 10;
@@ -31,9 +33,7 @@ int end= -1;
 	}
 	public static void main(String[] args) {
 		StringQueue queue = new StringQueue();
-		while(!queue.isFull()){
-			
-		}
+		//Scanner scan = new Scanner(System.in);
 		queue.insert("sneha");
 		queue.insert("shruthi");
 		queue.insert("arun");
@@ -43,7 +43,7 @@ int end= -1;
 		queue.insert("solar");
 		queue.insert("praveen");
 		queue.insert("vishal");
-		queue.insert("cisco");
+		queue.insert("chaitra");
 		//queue.insert("cisco");
 		
  System.out.println("Elements in queue");
