@@ -4,7 +4,7 @@ import java.awt.event.KeyListener;
 import java.util.Scanner;
 
 public class KeyValueStore {
-	private static final int SIZE = 20;// Deafult size for key-value store
+	private static final int SIZE = 5;// Deafult size for key-value store
 	private String keys[];
 	private int keyindex = -1;// index for keys
 	private int valueindex = -1;// index for values array
@@ -240,9 +240,18 @@ public class KeyValueStore {
 
 		System.out.println("Available space:" + kv.showSpaceAvailable());
 		// System.out.println();
+		System.out.println("Value Based sort in descending order:");
 		 kv.sort(false, false);
 		kv.showAll();
-
+			System.out.println("Value Based sort in ascending order:");
+		 kv.sort(false, true);
+		 	kv.showAll();
+		 	System.out.println("Key Based sort in ascending order:");
+                       kv.sort(true, true);
+		 	kv.showAll();
+		 		System.out.println("Key Based sort in descending order:");
+		 		 kv.sort(true, false);
+		 	kv.showAll();
 		System.out.println("Enter key to remove:");
 		String rk = scan.next();
 		kv.remove(rk);
